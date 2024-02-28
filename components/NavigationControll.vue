@@ -2,7 +2,7 @@
 const navigationLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/technologies", label: "Stack" },
+  { to: "/stack", label: "Stack" },
   { to: "/projects", label: "Projects" },
   { to: "/contact", label: "Contact" },
 ];
