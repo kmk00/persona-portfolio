@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>
-    <h1>H</h1>
+  <div class="">
+    <h1>Hdsadsa</h1>
   </div>
 </template>
