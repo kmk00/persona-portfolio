@@ -20,7 +20,7 @@ const route = useRoute();
       <div
         v-else
         @click="navigation.toggle"
-        class="uppercase cursor-pointer font-bold translate-x-[-50%] left-[50%] absolute top-10"
+        class="uppercase cursor-pointer font-bold translate-x-[-50%] left-[50%] absolute z-[-10] top-10"
       >
         {{ route.name }}
       </div>
