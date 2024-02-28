@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "expose";
+  src: url("./fonts/Expose-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "markin";
+  src: url("./fonts/Markin-LT-Ultra-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "p5shatty";
+  src: url("./fonts/p5hatty-1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "prototype";
+  src: url("./fonts/Persona5MenuFontPrototype-Regular.ttf") format("truetype");
+}
