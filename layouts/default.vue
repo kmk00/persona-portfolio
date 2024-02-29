@@ -4,5 +4,6 @@
     <Container>
       <slot />
     </Container>
+    <StartPage />
   </div>
 </template>
