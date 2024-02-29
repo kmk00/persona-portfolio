@@ -27,7 +27,7 @@ const navigation = useNavigation();
     />
     <img
       :class="navigation.isOpen ? 'hidden' : 'block'"
-      class="lg:hidden fixed bottom-0 z-10"
+      class="lg:hidden fixed bottom-0 z-0"
       src="~/assets/shapes/home-rect.svg"
     />
     <img
