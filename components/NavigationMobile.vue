@@ -25,20 +25,20 @@ if (process.client) {
       :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-50%]  rotate-[-10deg] font-expose text-5xl'"
       :div-sizes-classes="'w-[300px] h-[300px] relative'"
     />
-    <div class="" v-if="navigation.isOpen">
+    <div v-if="navigation.isOpen">
       <div
         class="flex text-4xl gap-2 flex-col h-screen bg-black justify-center items-center z-20"
       >
-        <img
-          class="fixed h-[1200px] max-w-[2000px] w-[2000px]"
-          src="~/assets/shapes/bg-mobile.svg"
-        />
+        <div class="fixed w-[1200px]">
+          <img src="~/assets/shapes/bg-mobile.svg" />
+        </div>
         <NavItem
           v-for="(link, index) in links"
           :to="link.to"
           :key="index"
           :index="index"
           :label="link.label"
+          @click="navigation.toggle"
         />
         <div class="relative w-[340px] h-[100px]">
           <img
