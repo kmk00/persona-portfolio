@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    ["@pinia/nuxt", { autoImports: ["defineStore", "acceptHMRUpdate"] }],
+  ],
   css: ["@/assets/styles/main.css"],
   tailwindcss: {
     config: {
@@ -18,6 +21,7 @@ export default defineNuxtConfig({
               100: "#D3D3D3",
               200: "#686868",
               300: "#404040",
+              400: "#0A0A0A",
             },
             customYellow: "#D5C31C",
             customPing: {
