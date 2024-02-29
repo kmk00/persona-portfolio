@@ -27,7 +27,7 @@ if (process.client) {
     />
     <div v-if="navigation.isOpen">
       <div
-        class="flex text-4xl gap-2 flex-col h-screen bg-black justify-center items-center z-20"
+        class="flex text-4xl gap-2 flex-col h-screen bg-black justify-center items-center"
       >
         <div class="fixed w-[1200px]">
           <img src="~/assets/shapes/bg-mobile.svg" />

@@ -5,7 +5,7 @@ const navigation = useNavigation();
 <template>
   <div>
     <div
-      class="text-customGray-100 font-markin p-3 text-5xl text-center relative flex flex-col justify-center items-center gap-8 mx-auto"
+      class="text-customGray-100 font-markin p-3 text-5xl text-center z-10 flex flex-col justify-center items-center gap-8 mx-auto"
     >
       <p>Hi, I'm Lucas, Web Developer</p>
       <p>Welcome to my portfolio</p>
