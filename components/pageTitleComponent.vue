@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const { divPositionClasses, textClasses } = defineProps<{
+  divPositionClasses: string;
+  textClasses: string;
+  divSizesClasses: string;
+}>();
+
 const route = useRoute();
 const navigation = useNavigation();
 </script>
@@ -7,29 +13,17 @@ const navigation = useNavigation();
   <div
     v-if="route.name === 'index'"
     @click="navigation.toggle"
-    class="uppercase cursor-pointer font-bold translate-x-[-50%] left-[50%] absolute z-[-10] top-10"
+    :class="divPositionClasses"
   >
-    <div class="w-[300px] h-[300px] relative">
+    <div :class="divSizesClasses">
       <img class="absolute" src="~/assets/shapes/titleImg.svg" />
-      <p
-        class="absolute top-[20%] tracking-widest text-white left-[50%] translate-x-[-50%] translate-y-[-50%] rotate-[-10deg] font-expose text-6xl"
-      >
-        home
-      </p>
+      <p :class="textClasses">home</p>
     </div>
   </div>
-  <div
-    v-else
-    @click="navigation.toggle"
-    class="uppercase cursor-pointer font-bold translate-x-[-50%] left-[50%] absolute z-[-10] top-10"
-  >
-    <div class="w-[300px] h-[300px] relative">
+  <div v-else @click="navigation.toggle" :class="divPositionClasses">
+    <div :class="divSizesClasses">
       <img class="absolute" src="~/assets/shapes/titleImg.svg" />
-      <p
-        class="absolute top-[20%] tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-50%] rotate-[-10deg] font-expose text-6xl"
-      >
-        {{ route.name }}
-      </p>
+      <p :class="textClasses">{{ route.name }}</p>
     </div>
   </div>
 </template>
