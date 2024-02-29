@@ -12,7 +12,8 @@ const windowWidth = useState("windowWidth", () =>
 if (process.client) {
   window.addEventListener("resize", () => {
     windowWidth.value = window.innerWidth;
-    if (navigation.isOpen && windowWidth.value > 768) navigation.isOpen = false;
+    if (navigation.isOpen && windowWidth.value > 1024)
+      navigation.isOpen = false;
   });
 }
 </script>
@@ -26,7 +27,7 @@ if (process.client) {
     />
     <div class="" v-if="navigation.isOpen">
       <div
-        class="flex font-prototype text-4xl sm:text-5xl gap-2 tracking-widest gap flex-col h-screen bg-black justify-center items-center z-20"
+        class="flex text-4xl gap-2 flex-col h-screen bg-black justify-center items-center z-20"
       >
         <img
           class="fixed h-[1200px] max-w-[2000px] w-[2000px]"
@@ -46,7 +47,7 @@ if (process.client) {
           />
           <button
             @click="navigation.toggle"
-            class="left-[50%] text-white translate-x-[-50%] absolute top-[30%]"
+            class="left-[50%] font-prototype text-white translate-x-[-50%] absolute top-[30%]"
           >
             Exit
           </button>

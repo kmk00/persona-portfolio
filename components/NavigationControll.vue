@@ -11,10 +11,10 @@ const navigationLinks = [
 <template>
   <div class="fixed w-full h-screen">
     <!-- Navigation Mobile -->
-    <div class="md:hidden">
+    <div class="lg:hidden">
       <NavigationMobile :links="navigationLinks" />
     </div>
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <NavigationDesktop :links="navigationLinks" />
     </div>
   </div>
