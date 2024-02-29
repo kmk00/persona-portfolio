@@ -22,8 +22,8 @@ if (process.client) {
   <div>
     <PageTitleComponent
       :div-position-classes="' cursor-pointer left-[50%] translate-x-[-50%] fixed z-[-10]  top-10'"
-      :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-50%]  rotate-[-10deg] font-expose text-5xl'"
-      :div-sizes-classes="'w-[300px] h-[300px] relative'"
+      :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[70%]  rotate-[-10deg] font-expose text-5xl'"
+      :div-sizes-classes="'w-[300px]  relative'"
     />
     <div v-if="navigation.isOpen">
       <div
