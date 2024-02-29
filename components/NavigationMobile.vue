@@ -4,6 +4,17 @@ defineProps<{
 }>();
 
 const navigation = useNavigation();
+
+const windowWidth = useState("windowWidth", () =>
+  process.client ? window.innerWidth : 0
+);
+
+if (process.client) {
+  window.addEventListener("resize", () => {
+    windowWidth.value = window.innerWidth;
+    if (navigation.isOpen && windowWidth.value > 768) navigation.isOpen = false;
+  });
+}
 </script>
 
 <template>
@@ -11,8 +22,12 @@ const navigation = useNavigation();
     <PageTitleComponent />
     <div class="" v-if="navigation.isOpen">
       <div
-        class="flex font-prototype text-4xl sm:text-5xl gap-2 tracking-widest gap flex-col h-screen bg-red-800 justify-center items-center z-20"
+        class="flex font-prototype text-4xl sm:text-5xl gap-2 tracking-widest gap flex-col h-screen bg-black justify-center items-center z-20"
       >
+        <img
+          class="fixed h-[1200px] max-w-[2000px] w-[2000px]"
+          src="~/assets/shapes/bg-mobile.svg"
+        />
         <NavItem
           v-for="(link, index) in links"
           :to="link.to"
