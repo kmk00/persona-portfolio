@@ -5,10 +5,20 @@ const navigation = useNavigation();
 <template>
   <div>
     <div
-      class="text-customGray-100 font-markin p-3 text-5xl text-center z-10 flex flex-col justify-center items-center gap-8 mx-auto"
+      class="text-customGray-100 font-markin p-8 text-3xl md:text-5xl lg:text-7xl text-center z-10 flex flex-col gap-8 lg:gap-20 mx-auto"
     >
-      <p>Hi, I'm Lucas, Web Developer</p>
-      <p>Welcome to my portfolio</p>
+      <div class="lg:text-left flex flex-col gap-5">
+        <p class="lg:ml-20">Hi,</p>
+        <p class="lg:ml-10">I'm Lucas,</p>
+        <p>Web Developer</p>
+      </div>
+      <span
+        class="border-b-2 border-customGray-300 max-w-[700px] w-full mx-auto"
+      ></span>
+      <div class="lg:text-right flex flex-col gap-5">
+        <p>Welcome</p>
+        <p class="lg:mr-10">to my portfolio</p>
+      </div>
     </div>
     <img
       :class="navigation.isOpen ? 'hidden' : 'block'"
