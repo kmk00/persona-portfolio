@@ -2,7 +2,8 @@ export const projects = [
   {
     name: "Kanji Clicker",
     technologies: ["VUE", "TAILWINDCSS"],
-    description: "A kanji learning game using Vue and Tailwind.",
+    description:
+      "The star symbol can be used, for example, to create interesting texts, nicknames, or elements of a bulleted list. It also works well for giving star ratings.",
     projectLink: "https://kanji-clicker.netlify.app/",
     demoLink: "https://github.com/pankajkumar/kanji-clicker",
     image: "kanji-clicker.png",
