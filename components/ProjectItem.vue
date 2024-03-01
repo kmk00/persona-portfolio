@@ -13,6 +13,7 @@ const { name, description, technologies, projectLink, demoLink, image, index } =
 
 <template>
   <div
+    :class="index % 2 === 0 ? 'rotate-[-2deg]' : 'rotate-[2deg]'"
     class="font-markin text-center border-8 lg:min-w-[700px] w-full lg:max-w-[900px] border-black"
   >
     <div class="bg-white text-3xl p-2">
