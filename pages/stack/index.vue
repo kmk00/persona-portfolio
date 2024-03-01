@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="font-expose px-4 my-8 text-xl">
+    <div class="font-expose text-xl">
       <p class="text-4xl my-8 text-customGray-100 text-center">
         Technologies and tools I've already used.
       </p>
@@ -24,11 +24,11 @@
         <StackItem stack-name="JAVASCRIPT" />
         <StackItem stack-name="TYPESCRIPT" />
       </div>
-      <p class="text-4xl my-8 text-customGray-100 text-right">
+      <p class="text-4xl my-8 text-customGray-100 text-center lg:text-right">
         Things I want to learn next...
       </p>
       <div
-        class="grid h-[300px] gap-4 sm:mr-4 mx-auto sm:w-1/2 text-white grid-cols-2 justify-center items-center text-center"
+        class="grid h-[300px] sm:gap-4 sm:mr-4 mx-auto lg:w-1/2 text-white grid-cols-2 justify-center items-center text-center"
       >
         <StackItem stack-name="HTML" />
         <StackItem stack-name="CSS" />
