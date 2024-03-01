@@ -22,7 +22,7 @@ const navigation = useNavigation();
     </div>
     <img
       :class="navigation.isOpen ? 'hidden' : 'block'"
-      class="lg:hidden fixed bottom-10 opacity-20 scale-[.4] left-[50%] translate-x-[-50%]"
+      class="lg:hidden fixed bottom-10 z-0 scale-[.4] left-[50%] translate-x-[-50%]"
       src="~/assets/shapes/Star.svg"
     />
     <img

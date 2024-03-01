@@ -21,7 +21,7 @@ if (process.client) {
 <template>
   <div>
     <PageTitleComponent
-      :div-position-classes="'cursor-pointer fixed w-full h-[200px] bg-customGray-400 z-[-10]'"
+      :div-position-classes="'cursor-pointer fixed w-full h-[150px] bg-customGray-400 z-[-10]'"
       :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[70%]  rotate-[-10deg] font-expose text-5xl'"
       :div-sizes-classes="'w-[300px] mx-auto mt-4 relative'"
     />
