@@ -9,7 +9,7 @@ const navigationLinks = [
 </script>
 
 <template>
-  <div class="fixed w-full h-screen">
+  <div class="fixed h-screen">
     <!-- Navigation Mobile -->
     <div class="lg:hidden">
       <NavigationMobile :links="navigationLinks" />
