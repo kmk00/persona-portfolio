@@ -1,6 +1,6 @@
 export const useStartPage = defineStore("startPage", {
   state: () => ({
-    isOpen: true,
+    isOpen: false,
   }),
   actions: {
     toggle() {
