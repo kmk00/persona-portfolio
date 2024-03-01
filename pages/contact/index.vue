@@ -14,6 +14,12 @@
         >
       </div>
     </div>
+    <div
+      class="w-[400px] h-[300px] bg-customRed-400 fixed bottom-0 right-0 translate-x-[40%] translate-y-[30%] rotate-[40deg]"
+    ></div>
+    <div
+      class="w-[400px] h-[300px] bg-customGray-100 fixed bottom-0 right-0 translate-x-[-20%] translate-y-[70%] rotate-[40deg]"
+    ></div>
   </div>
 </template>
 
