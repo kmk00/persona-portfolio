@@ -4,7 +4,7 @@ const navigation = useNavigation();
 
 <template>
   <div>
-    <div class="text-customGray-100 font-markin p-8 text-xl">
+    <div class="text-customGray-100 relative z-30 font-markin p-8 text-xl">
       <!-- :class="navigation.isOpen ? 'hidden' : 'block'" -->
       <div class="transform -skew-y-6 relative z-0 bg-black p-2">
         <div class="bg-white p-2">

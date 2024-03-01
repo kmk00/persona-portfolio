@@ -5,7 +5,7 @@ const navigation = useNavigation();
 <template>
   <div>
     <div
-      class="text-customGray-100 font-markin p-8 text-3xl md:text-5xl lg:text-7xl text-center z-10 flex flex-col gap-8 lg:gap-20 mx-auto"
+      class="text-customGray-100 font-markin p-8 text-3xl relative z-30 md:text-5xl lg:text-7xl text-center flex flex-col gap-8 lg:gap-20 mx-auto"
     >
       <div class="lg:text-left flex flex-col gap-5">
         <p class="lg:ml-20">Hi,</p>
@@ -22,7 +22,7 @@ const navigation = useNavigation();
     </div>
     <img
       :class="navigation.isOpen ? 'hidden' : 'block'"
-      class="lg:hidden fixed bottom-10 z-0 scale-[.4] left-[50%] translate-x-[-50%]"
+      class="lg:hidden fixed bottom-10 opacity-10 z-0 scale-[.6] left-[50%] translate-x-[-50%]"
       src="~/assets/shapes/Star.svg"
     />
     <img

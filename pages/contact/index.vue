@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="font-expose p-8 lg:px-2 text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white"
+      class="font-expose p-8 lg:px-2 relative z-30 text-center text-3xl md:text-5xl lg:text-6xl xl:text-8xl text-white"
     >
       <p>Don’t hesitate to contact me...</p>
       <div
