@@ -20,7 +20,7 @@ import { projects } from "~/assets/data/projects";
       </div>
     </div>
     <img
-      class="fixed lg:top-0 lg:bottom-full bottom-0 lg:right-0 lg:translate-x-[200px]"
+      class="fixed bottom-0 lg:right-0 lg:translate-x-[200px] xl:translate-x-[400px]"
       src="~/assets/shapes/project-bg.svg"
     />
     <!-- <div
