@@ -18,20 +18,7 @@ const {
   isOpen: boolean;
   toggle: () => void;
 }>();
-
-// const { isOpen, name, description, projectLink, demoLink, toggle, image } =
-// defineProps({
-//   isOpen: Boolean,
-//   toggle: Function as PropType<() => void>,
-//   name: String,
-//   description: String,
-//   projectLink: String,
-//   demoLink: String,
-//   image: String,
-// });
 </script>
-
-<!-- @click="toggle" -->
 
 <template>
   <div

@@ -23,8 +23,5 @@ import { projects } from "~/assets/data/projects";
       class="fixed 2xl:scale-[1.3] bottom-0 lg:right-0 lg:top-20 lg:translate-x-[200px] xl:translate-x-[100px]"
       src="~/assets/shapes/project-bg2.svg"
     />
-    <!-- <div
-      class="w-[400px] h-[300px] bg-customRed-400 fixed bottom-0 right-0 translate-x-[40%] translate-y-[30%] rotate-[40deg]"
-    ></div> -->
   </div>
 </template>
