@@ -9,7 +9,7 @@ defineProps<{
     <div>
       <img
         style="clip-path: polygon(0 0, 88% 0, 64% 100%, 0% 100%)"
-        src="~/assets/shapes/bg-mobile.svg"
+        src="~/assets/shapes/bg-mobile2.svg"
         alt="stars"
         class="fixed min-h-screen h-[1800px] max-w-[1000px] xl:left-[-300px] left-[-500px] top-[-250px] bg-black -z-10 border-black border-8"
       />

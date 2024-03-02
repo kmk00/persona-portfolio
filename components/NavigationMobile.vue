@@ -30,7 +30,7 @@ if (process.client) {
         class="flex relative z-40 text-4xl gap-2 flex-col h-screen bg-black justify-center items-center"
       >
         <div class="fixed w-[1200px]">
-          <img src="~/assets/shapes/bg-mobile.svg" />
+          <img src="~/assets/shapes/bg-mobile2.svg" />
         </div>
         <NavItem
           v-for="(link, index) in links"
