@@ -36,7 +36,7 @@ const {
 <template>
   <div
     v-if="isOpen"
-    class="fixed flex lg:justify-end lg:items-center justify-center items-center w-screen h-screen top-0 left-0 z-[10] pt-40 lg:pr-10 xl:pr-[100px] 2xl:px-[20%] bg-black/80"
+    class="fixed flex lg:justify-end lg:items-center justify-center items-center w-screen h-screen top-0 left-0 z-[10] pt-40 lg:pr-10 xl:pr-[100px] 2xl:pl-[500px] 2xl:pr-[15%] bg-black/80"
   >
     <div
       class="text-white relative bg-customGray-200 mb-8 md:mb-16 max-w-[400px] max-h-[460px] 2xl:max-w-[800px] 2xl:max-h-[800px] md:max-h-[600px] md:max-w-[600px] text-2xl px-10 mx-8"
