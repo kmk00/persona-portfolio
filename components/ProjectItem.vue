@@ -21,7 +21,7 @@ const toggle = () => {
     <div
       @click="toggle"
       :class="index % 2 === 0 ? 'rotate-[-2deg]' : 'rotate-[2deg]'"
-      class="cursor-pointer font-markin text-center border-8 lg:min-w-[700px] lg:max-w-[900px] border-black"
+      class="cursor-pointer font-markin text-center border-8 lg:min-w-[650px] lg:max-w-[900px] border-black"
     >
       <div class="bg-white text-3xl p-2">
         <p>{{ name }}</p>
