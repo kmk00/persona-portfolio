@@ -1,14 +1,34 @@
 <script setup lang="ts">
-const { isOpen, name, description, projectLink, demoLink, toggle, image } =
-  defineProps({
-    isOpen: Boolean,
-    toggle: Function as PropType<() => void>,
-    name: String,
-    description: String,
-    projectLink: String,
-    demoLink: String,
-    image: String,
-  });
+const {
+  name,
+  description,
+  technologies,
+  projectLink,
+  demoLink,
+  image,
+  isOpen,
+  toggle,
+} = defineProps<{
+  name: string;
+  description: string;
+  technologies: string[];
+  projectLink: string;
+  demoLink?: string;
+  image: string;
+  isOpen: boolean;
+  toggle: () => void;
+}>();
+
+// const { isOpen, name, description, projectLink, demoLink, toggle, image } =
+// defineProps({
+//   isOpen: Boolean,
+//   toggle: Function as PropType<() => void>,
+//   name: String,
+//   description: String,
+//   projectLink: String,
+//   demoLink: String,
+//   image: String,
+// });
 </script>
 
 <!-- @click="toggle" -->
@@ -27,12 +47,9 @@ const { isOpen, name, description, projectLink, demoLink, toggle, image } =
         <div
           class="bg-white w-[90%] h-[90%] overflow-y-auto border-8 flex flex-wrap font-p5shatty justify-center items-center text-black text-sm md:text-2xl border-customGray-300"
         >
-          <p>Vue ★&nbsp</p>
-          <p>TailwindCSS★&nbsp</p>
-          <p>Vue ★&nbsp</p>
-          <p>TailwindCSS★&nbsp</p>
-          <p>Vue ★&nbsp</p>
-          <p>TailwindCSS</p>
+          <p v-for="(tech, index) in technologies">
+            {{ tech }} {{ index < technologies.length - 1 ? "★&nbsp" : "" }}
+          </p>
         </div>
       </div>
       <button

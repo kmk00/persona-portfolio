@@ -33,13 +33,14 @@ const toggle = () => {
       </div>
     </div>
     <ProjectModal
-      :toggle="toggle"
-      :isOpen="isOpen"
       :name="name"
       :description="description"
+      :toggle="toggle"
+      :isOpen="isOpen"
       :projectLink="projectLink"
       :demoLink="demoLink"
       :image="image"
+      :technologies="technologies"
     />
   </div>
 </template>
