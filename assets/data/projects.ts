@@ -6,7 +6,7 @@ export const projects = [
       "The star symbol can be used, for example, to create interesting texts, nicknames, or elements of a bulleted list. It also works well for giving star ratings. The star symbol can be used, for example, to create interesting texts, nicknames, or elements of a bulleted list. It also works well for giving star ratings.",
     projectLink: "https://kanji-clicker.netlify.app/",
     demoLink: "https://github.com/pankajkumar/kanji-clicker",
-    image: "kanjiClicker.png",
+    image: "kanjiClicker.jpg",
   },
   {
     name: "Cooking Blog",
@@ -14,7 +14,7 @@ export const projects = [
     description: "Cooking blog using Next.js and Tailwind.",
     projectLink: "https://kanji-clicker.netlify.app/",
     demoLink: "https://github.com/pankajkumar/kanji-clicker",
-    image: "kanjiClicker.png",
+    image: "",
   },
   {
     name: "MAZE RUNNER",

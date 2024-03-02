@@ -58,8 +58,8 @@ const { isOpen, name, description, projectLink, demoLink, toggle, image } =
         <a v-if="demoLink" :href="demoLink">DEMO</a>
         <a :href="projectLink">PROJECT</a>
       </div>
-      <div class="pb-2">
-        <img src="~/assets/img/kanjiClicker.jpg" />
+      <div class="mb-2 border-8 border-customGray-300">
+        <img :src="`/img/${image}`" />
       </div>
     </div>
   </div>
