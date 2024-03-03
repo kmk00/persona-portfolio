@@ -5,7 +5,7 @@ const startPage = useStartPage();
 <template>
   <div
     v-if="startPage.isOpen"
-    class="fixed w-screen h-screen bg-black justify-center text-white items-center md:justify-end md:items-end flex"
+    class="fixed w-screen h-screen bg-black justify-center text-white items-center md:justify-end md:items-end z-50 flex"
   >
     <div class="group md:mr-20 md:mb-20 relative">
       <img
