@@ -7,6 +7,11 @@ const { divPositionClasses, textClasses } = defineProps<{
 
 const route = useRoute();
 const navigation = useNavigation();
+const text = ref(route.name);
+
+watch(route, () => {
+  text.value = route.name;
+});
 </script>
 
 <template>
