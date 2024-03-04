@@ -27,8 +27,8 @@ defineProps<{
     </div>
     <PageTitleComponent
       :div-position-classes="' cursor-pointer xl:left-40 fixed z-[-10] bottom-0'"
-      :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-10%]  rotate-[-10deg] font-expose text-8xl'"
-      :div-sizes-classes="'w-[500px] h-[300px] relative'"
+      :text-classes="'absolute top-[30%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-10%]  rotate-[-10deg] font-expose text-8xl'"
+      :div-sizes-classes="'w-[500px] h-[200px] relative'"
     />
   </div>
 </template>
