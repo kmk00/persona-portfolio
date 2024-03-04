@@ -29,7 +29,7 @@ const technologyStore = useTechnologies();
             :name="technologyStore.technologyIcon"
             height="300"
             width="300"
-            class="text-customYellow"
+            class="text-customGray-200"
           />
         </div>
         <div
