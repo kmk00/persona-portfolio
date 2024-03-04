@@ -21,7 +21,7 @@ const toggle = () => {
     <div
       @click="toggle"
       :class="index % 2 === 0 ? 'rotate-[-2deg]' : 'rotate-[2deg]'"
-      class="cursor-pointer font-markin text-center border-8 lg:min-w-[650px] lg:max-w-[900px] border-black"
+      class="gentle-tilt-move-shake cursor-pointer font-markin text-center border-8 lg:min-w-[650px] lg:max-w-[900px] border-black"
     >
       <div class="bg-white text-3xl p-2">
         <p>{{ name }}</p>
@@ -32,15 +32,51 @@ const toggle = () => {
         </p>
       </div>
     </div>
-    <ProjectModal
-      :name="name"
-      :description="description"
-      :toggle="toggle"
-      :isOpen="isOpen"
-      :projectLink="projectLink"
-      :demoLink="demoLink"
-      :image="image"
-      :technologies="technologies"
-    />
+    <Transition name="fade">
+      <ProjectModal
+        :name="name"
+        :description="description"
+        :toggle="toggle"
+        :isOpen="isOpen"
+        :projectLink="projectLink"
+        :demoLink="demoLink"
+        :image="image"
+        :technologies="technologies"
+      />
+    </Transition>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.gentle-tilt-move-shake:hover {
+  animation: tilt-n-move-shaking 0.15s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(1px, 1px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+  75% {
+    transform: translate(-1px, 1px) rotate(-0.5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+</style>

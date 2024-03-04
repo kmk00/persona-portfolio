@@ -17,13 +17,27 @@ const navigation = useNavigation();
   >
     <div :class="divSizesClasses">
       <img class="absolute" src="~/assets/shapes/titleImg.svg" />
-      <p :class="textClasses">home</p>
+      <Transition name="fade" appear>
+        <p :class="textClasses">home</p>
+      </Transition>
     </div>
   </div>
   <div v-else @click="navigation.toggle" :class="divPositionClasses">
     <div :class="divSizesClasses">
       <img class="absolute mx-auto" src="~/assets/shapes/titleImg.svg" />
-      <p :class="textClasses">{{ route.name }}</p>
+      <Transition name="fade" appear>
+        <p :key="route.name" :class="textClasses">{{ route.name }}</p>
+      </Transition>
     </div>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-enter-from {
+  opacity: 0;
+}
+</style>

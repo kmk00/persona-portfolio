@@ -9,7 +9,7 @@ const navigation = useNavigation();
       <div class="transform -skew-y-2 relative z-0 bg-black p-2">
         <div class="bg-white p-2">
           <div
-            class="bg-customGray-400 max-h-[300px] md:max-h-[600px] xl:max-h-[800px] overflow-y-auto"
+            class="bg-customGray-400 max-h-[300px] md:max-h-[600px] xl:max-h-[700px] overflow-y-auto scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
           >
             <p class="p-4 md:text-3xl lg:text-5xl">
               Lorem Ipsum is simply dummy text of the printing and typesetting

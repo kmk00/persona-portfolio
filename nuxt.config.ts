@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     ["@pinia/nuxt", { autoImports: ["defineStore", "acceptHMRUpdate"] }],
@@ -43,6 +46,9 @@ export default defineNuxtConfig({
           },
         },
       },
+      plugins: [
+        require("tailwind-scrollbar")({ preferredStrategy: "pseudoelements" }),
+      ],
     },
   },
 });

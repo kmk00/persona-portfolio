@@ -1,7 +1,25 @@
 <script setup lang="ts">
+import gsap from "gsap";
+
 defineProps<{
   links: { to: string; label: string }[];
 }>();
+
+const beforeEnter = (el: any) => {
+  console.log(el);
+  el.style.opacity = "0";
+  el.style.transitionDelay = "0.5s";
+};
+
+const onEnter = (el: any, done: () => void) => {
+  console.log(el);
+  gsap.to(el, {
+    opacity: 1,
+    duration: 0.3,
+    delay: el.dataset.index ? +el.dataset.index * 0.3 : 0,
+    onComplete: done,
+  });
+};
 </script>
 
 <template>
@@ -16,19 +34,22 @@ defineProps<{
       <div
         class="flex flex-col text-5xl w-[400px] xl:ml-16 ml-8 translate-x-[-10%] pb-44 h-screen justify-center items-center gap-2 z-20"
       >
-        <NavItem
-          v-for="(link, index) in links"
-          :to="link.to"
-          :key="index"
-          :index="index"
-          :label="link.label"
-        />
+        <TransitionGroup @before-enter="beforeEnter" @enter="onEnter" appear>
+          <NavItem
+            v-for="(link, index) in links"
+            :to="link.to"
+            :key="index"
+            :index="index"
+            :label="link.label"
+            :data-index="index"
+          />
+        </TransitionGroup>
       </div>
     </div>
     <PageTitleComponent
       :div-position-classes="' cursor-pointer xl:left-40 fixed z-[-10] bottom-0'"
-      :text-classes="'absolute top-[20%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-10%]  rotate-[-10deg] font-expose text-8xl'"
-      :div-sizes-classes="'w-[500px] h-[300px] relative'"
+      :text-classes="'absolute top-[30%] font-bold uppercase tracking-wide text-white left-[50%] translate-x-[-50%] translate-y-[-10%]  rotate-[-10deg] font-expose text-8xl'"
+      :div-sizes-classes="'w-[500px] h-[200px] relative'"
     />
   </div>
 </template>
