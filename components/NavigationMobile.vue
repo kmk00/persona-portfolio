@@ -43,14 +43,14 @@ if (process.client) {
             :label="link.label"
             @click="navigation.toggle"
           />
-          <div class="relative w-[340px] h-[100px]">
+          <div class="relative horizontal-shake w-[340px] h-[100px]">
             <img
               class="absolute right-[50%] translate-x-[50%] top-2 h-[100px]"
               src="~/assets/shapes/exit-btn.svg"
             />
             <button
               @click="navigation.toggle"
-              class="left-[50%] font-prototype text-white translate-x-[-50%] absolute top-[30%]"
+              class="left-[50%] font-prototype text-white hover:scale-110 duration-200 ease-in-out translate-x-[-50%] absolute top-[30%]"
             >
               Exit
             </button>
@@ -75,5 +75,32 @@ if (process.client) {
 .slide-in-enter-to,
 .slide-in-leave-from {
   transform: translateY(0);
+}
+
+.horizontal-shake:hover {
+  animation: horizontal-shaking 0.35s infinite;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: translateX(1px);
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: translateX(-1px);
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: translateX(1px);
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: translateX(0);
+    transform: rotate(0deg);
+  }
 }
 </style>
