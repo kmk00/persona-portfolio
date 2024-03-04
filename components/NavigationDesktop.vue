@@ -1,7 +1,25 @@
 <script setup lang="ts">
+import gsap from "gsap";
+
 defineProps<{
   links: { to: string; label: string }[];
 }>();
+
+const beforeEnter = (el: any) => {
+  console.log(el);
+  el.style.opacity = "0";
+  el.style.transitionDelay = "0.5s";
+};
+
+const onEnter = (el: any, done: () => void) => {
+  console.log(el);
+  gsap.to(el, {
+    opacity: 1,
+    duration: 0.3,
+    delay: el.dataset.index ? +el.dataset.index * 0.3 : 0,
+    onComplete: done,
+  });
+};
 </script>
 
 <template>
@@ -16,13 +34,16 @@ defineProps<{
       <div
         class="flex flex-col text-5xl w-[400px] xl:ml-16 ml-8 translate-x-[-10%] pb-44 h-screen justify-center items-center gap-2 z-20"
       >
-        <NavItem
-          v-for="(link, index) in links"
-          :to="link.to"
-          :key="index"
-          :index="index"
-          :label="link.label"
-        />
+        <TransitionGroup @before-enter="beforeEnter" @enter="onEnter" appear>
+          <NavItem
+            v-for="(link, index) in links"
+            :to="link.to"
+            :key="index"
+            :index="index"
+            :label="link.label"
+            :data-index="index"
+          />
+        </TransitionGroup>
       </div>
     </div>
     <PageTitleComponent
@@ -32,3 +53,15 @@ defineProps<{
     />
   </div>
 </template>
+
+<!-- <style scoped>
+.list-enter-active {
+  transition: all 0.4s ease;
+  transition-delay: 1s;
+}
+
+.list-enter-from {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+</style> -->
