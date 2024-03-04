@@ -53,15 +53,3 @@ const onEnter = (el: any, done: () => void) => {
     />
   </div>
 </template>
-
-<!-- <style scoped>
-.list-enter-active {
-  transition: all 0.4s ease;
-  transition-delay: 1s;
-}
-
-.list-enter-from {
-  opacity: 0;
-  transform: translateY(-100px);
-}
-</style> -->
