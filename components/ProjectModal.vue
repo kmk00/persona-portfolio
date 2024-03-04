@@ -32,7 +32,7 @@ const {
         class="w-[200px] h-[100px] md:w-[300px] md:h-[150px] flex justify-center items-center translate-x-[20px] translate-y-[-60px] md:translate-y-[-80px] rotate-[6deg] right-0 top-0 absolute bg-customGray-200"
       >
         <div
-          class="bg-white w-[90%] h-[90%] overflow-y-auto border-8 flex flex-wrap font-p5shatty justify-center items-center text-black text-sm md:text-2xl border-customGray-300"
+          class="bg-white w-[90%] h-[90%] overflow-y-auto border-8 flex flex-wrap font-p5shatty justify-center items-center text-black text-sm md:text-2xl border-customGray-300 scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
         >
           <p v-for="(tech, index) in technologies">
             {{ tech }} {{ index < technologies.length - 1 ? "★&nbsp" : "" }}
@@ -52,7 +52,7 @@ const {
         {{ name }}
       </p>
       <p
-        class="text-lg xl:text-2xl max-h-[100px] overflow-y-auto font-p5shatty"
+        class="text-lg xl:text-2xl max-h-[100px] overflow-y-auto font-p5shatty scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
       >
         {{ description }}
       </p>

@@ -11,7 +11,7 @@ const technologyStore = useTechnologies();
         Technologies and tools I've already used.
       </p>
       <div
-        class="grid pt-8 h-[300px] overflow-y-scroll overflow-x-hidden text-white grid-cols-2 sm:grid-cols-3 justify-center items-center text-center"
+        class="grid pt-8 h-[300px] overflow-y-scroll overflow-x-hidden text-white grid-cols-2 sm:grid-cols-3 justify-center items-center text-center scrollbar scrollbar-thumb-customYellow scrollbar-track-white scrollbar-thin"
       >
         <StackItem
           v-for="tech in technologies"
@@ -29,6 +29,7 @@ const technologyStore = useTechnologies();
             :name="technologyStore.technologyIcon"
             height="300"
             width="300"
+            class="text-customYellow"
           />
         </div>
         <div
