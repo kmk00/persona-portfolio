@@ -41,7 +41,7 @@ const {
       </div>
       <button
         @click="toggle"
-        class="absolute text-8xl top-0 left-0 translate-x-[2px] font-expose translate-y-[-50px] rotate-[-20deg]"
+        class="absolute text-8xl top-0 left-0 translate-x-[2px] font-expose translate-y-[-50px] rotate-[-20deg] hover:scale-110 transition-all duration-300 ease-in-out"
       >
         x
       </button>
@@ -59,8 +59,8 @@ const {
       <div
         class="flex gap-4 xl:gap-8 font-expose my-2 md:my-4 2xl:my-6 text-customGray-300 text-2xl md:text-3xl 2xl:text-5xl"
       >
-        <a v-if="demoLink" :href="demoLink">DEMO</a>
-        <a :href="projectLink">PROJECT</a>
+        <a class="hover:animate-pulse" :href="projectLink">PROJECT</a>
+        <a v-if="demoLink" class="hover:animate-pulse" :href="demoLink">DEMO</a>
       </div>
       <div class="mb-2 border-8 border-customGray-300">
         <img :src="`/img/${image}`" />
