@@ -59,7 +59,7 @@ const toggle = () => {
 }
 
 .gentle-tilt-move-shake:hover {
-  animation: tilt-n-move-shaking 0.15s infinite;
+  animation: tilt-n-move-shaking 0.4s infinite;
 }
 
 @keyframes tilt-n-move-shaking {
