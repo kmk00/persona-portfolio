@@ -70,7 +70,7 @@ const toggle = () => {
     transform: translate(1px, 1px) rotate(0.5deg);
   }
   50% {
-    transform: translate(0, 0) rotate(0eg);
+    transform: translate(0, 0) rotate(0deg);
   }
   75% {
     transform: translate(-1px, 1px) rotate(-0.5deg);
