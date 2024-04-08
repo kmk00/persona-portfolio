@@ -26,7 +26,7 @@ const navigation = useNavigation();
     <div :class="divSizesClasses">
       <img class="absolute mx-auto" src="~/assets/shapes/titleImg.svg" />
       <Transition name="fade" appear>
-        <p :key="route.name" :class="textClasses">{{ route.name }}</p>
+        <p :class="textClasses">{{ route.name }}</p>
       </Transition>
     </div>
   </div>
