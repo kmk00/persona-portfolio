@@ -33,19 +33,16 @@ switch (index + 1) {
 </script>
 
 <template>
-  <div
-    :class="
-      index % 2 == 0
-        ? 'translate-x-[-5%] rotate-[-1deg]'
-        : 'translate-x-[4%] rotate-[1deg]'
-    "
+  <NuxtLink
+    :to="to"
+    :class="index % 2 == 0 ? 'mr-8 rotate-[-1deg]' : 'ml-8 rotate-[1deg]'"
     class="relative horizontal-shake font-prototype tracking-widest w-[280px] h-[70px] md:w-[310px] md:h-[90px] lg:w-[340px] lg:h-[100px] xl:w-[380px] xl:h-[120px]"
   >
     <img class="absolute" :src="imagePath" />
-    <NuxtLink class="left-[50%] translate-x-[-50%] absolute top-[30%]" :to="to">
+    <p class="left-[50%] translate-x-[-50%] absolute top-[30%]">
       {{ label }}
-    </NuxtLink>
-  </div>
+    </p>
+  </NuxtLink>
 </template>
 
 <style scoped>
@@ -55,23 +52,18 @@ switch (index + 1) {
 
 @keyframes horizontal-shaking {
   0% {
-    transform: translateX(0);
     transform: rotate(0deg);
   }
   25% {
-    transform: translateX(1px);
     transform: rotate(0.5deg);
   }
   50% {
-    transform: translateX(-1px);
     transform: rotate(0deg);
   }
   75% {
-    transform: translateX(1px);
     transform: rotate(-0.5deg);
   }
   100% {
-    transform: translateX(0);
     transform: rotate(0deg);
   }
 }

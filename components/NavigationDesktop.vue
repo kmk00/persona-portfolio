@@ -6,16 +6,13 @@ defineProps<{
 }>();
 
 const beforeEnter = (el: any) => {
-  console.log(el);
-  el.style.opacity = "0";
-  el.style.transitionDelay = "0.5s";
+  el.style.opacity = 0;
 };
 
 const onEnter = (el: any, done: () => void) => {
-  console.log(el);
   gsap.to(el, {
     opacity: 1,
-    duration: 0.3,
+    duration: 1,
     delay: el.dataset.index ? +el.dataset.index * 0.3 : 0,
     onComplete: done,
   });
