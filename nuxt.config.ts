@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
   },
   modules: [
     "@nuxtjs/tailwindcss",
