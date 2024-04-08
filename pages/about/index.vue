@@ -1,5 +1,10 @@
 <script setup>
 const navigation = useNavigation();
+
+useSeoMeta({
+  title: "About",
+  description: "About me",
+});
 </script>
 
 <template>

@@ -1,3 +1,10 @@
+<script setup>
+useSeoMeta({
+  title: "Contact",
+  description: "Contact me",
+});
+</script>
+
 <template>
   <div>
     <div

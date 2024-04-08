@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { technologies, wantToLearn } from "~/assets/data/technologies";
 
+useSeoMeta({
+  title: "Stack",
+  description: "Tech stack I've used and things I want to learn next",
+});
+
 const technologyStore = useTechnologies();
 </script>
 
