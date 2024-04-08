@@ -7,21 +7,9 @@
       <div
         class="flex flex-col gap-4 space-y-24 mt-8 lg:mt-24 text-6xl lg:text-8xl"
       >
-        <ContactLink
-          link="https://github.com/kmk00"
-          label="Github"
-          rotate="rotate-[-5deg]"
-        />
-        <ContactLink
-          link="mailto:jacob.rockily@gmail.com"
-          label="Mail"
-          rotate="rotate-[5deg]"
-        />
-        <ContactLink
-          link="/resume.pdf"
-          label="Resume"
-          rotate="rotate-[-5deg]"
-        />
+        <ContactLink link="https://github.com/kmk00" label="Github" />
+        <ContactLink link="mailto:lukaminskii00@gmail.com" label="Mail" />
+        <ContactLink link="/resume.pdf" label="Resume" />
       </div>
     </div>
     <div
