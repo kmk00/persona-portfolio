@@ -10,12 +10,11 @@ useSeoMeta({
 <template>
   <div>
     <div
-      class="text-customGray-100 font-prototype p-8 text-3xl relative z-30 md:text-5xl lg:text-7xl text-center flex flex-col gap-8 lg:gap-20 mx-auto"
+      class="text-customGray-100 font-prototype p-8 text-4xl relative z-30 md:text-5xl lg:text-7xl text-center flex flex-col gap-8 lg:gap-20 mx-auto"
     >
       <div class="lg:text-left flex flex-col gap-5">
         <p class="lg:ml-20">Hi,</p>
         <p class="lg:ml-10">I'm Lucas,</p>
-        <p>Web Developer</p>
       </div>
       <span
         class="border-b-2 border-customGray-300 max-w-[700px] w-full mx-auto"
