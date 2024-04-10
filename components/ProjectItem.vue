@@ -6,7 +6,7 @@ const { name, description, technologies, projectLink, demoLink, image, index } =
     technologies: string[];
     projectLink: string;
     demoLink?: string;
-    image: string;
+    image?: string;
     index: number;
   }>();
 
@@ -26,9 +26,11 @@ const toggle = () => {
       <div class="bg-white text-3xl p-2">
         <p>{{ name }}</p>
       </div>
-      <div class="bg-black text-white p-2 flex justify-center">
+      <div
+        class="flex gap-3 justify-center bg-black text-white overflow-x-auto whitespace-nowrap px-4 py-2"
+      >
         <p v-for="(tech, index) in technologies">
-          {{ tech }} {{ index < technologies.length - 1 ? "★&nbsp" : "" }}
+          {{ tech }}
         </p>
       </div>
     </div>
@@ -59,7 +61,7 @@ const toggle = () => {
 }
 
 .gentle-tilt-move-shake:hover {
-  animation: tilt-n-move-shaking 0.4s infinite;
+  animation: tilt-n-move-shaking 1s infinite;
 }
 
 @keyframes tilt-n-move-shaking {

@@ -14,7 +14,7 @@ const {
   technologies: string[];
   projectLink: string;
   demoLink?: string;
-  image: string;
+  image?: string;
   isOpen: boolean;
   toggle: () => void;
 }>();
@@ -32,7 +32,7 @@ const {
         class="w-[200px] h-[100px] md:w-[300px] md:h-[150px] flex justify-center items-center translate-x-[20px] translate-y-[-60px] md:translate-y-[-80px] rotate-[6deg] right-0 top-0 absolute bg-customGray-200"
       >
         <div
-          class="bg-white w-[90%] h-[90%] overflow-y-auto border-8 flex flex-wrap font-p5shatty justify-center items-center text-black text-sm md:text-2xl border-customGray-300 scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
+          class="bg-white w-[90%] h-[90%] overflow-y-auto border-8 flex flex-wrap font-p5shatty justify-center items-center text-black text-sm md:text-base border-customGray-300 scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
         >
           <p v-for="(tech, index) in technologies">
             {{ tech }} {{ index < technologies.length - 1 ? "★&nbsp" : "" }}
@@ -47,7 +47,7 @@ const {
       </button>
       <p
         style=""
-        class="text-4xl 2xl:text-6xl tracking-widest translate-y-[40px] md:translate-y-[30px] 2xl:translate-y-[20px] translate-x-[-60px] font-expose rotate-[-7deg] mb-16"
+        class="xl:max-w-[630px] text-4xl 2xl:text-6xl tracking-widest translate-y-[40px] md:translate-y-[30px] 2xl:translate-y-[30px] 2xl:translate-x-[-120px] translate-x-[-60px] font-expose rotate-[-7deg] mb-16"
       >
         {{ name }}
       </p>
@@ -62,7 +62,7 @@ const {
         <a class="hover:animate-pulse" :href="projectLink">PROJECT</a>
         <a v-if="demoLink" class="hover:animate-pulse" :href="demoLink">DEMO</a>
       </div>
-      <div class="mb-2 border-8 border-customGray-300">
+      <div v-if="image" class="mb-2 border-8 border-customGray-300">
         <img :src="`/img/${image}`" />
       </div>
     </div>
