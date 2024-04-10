@@ -9,58 +9,49 @@ useSeoMeta({
 
 <template>
   <div>
-    <div class="text-customGray-100 relative z-30 font-markin p-8 text-xl">
-      <!-- :class="navigation.isOpen ? 'hidden' : 'block'" -->
-      <div class="transform -skew-y-2 relative z-0 bg-black p-2">
-        <div class="bg-white p-2">
-          <div
-            class="bg-customGray-400 max-h-[300px] md:max-h-[600px] xl:max-h-[700px] overflow-y-auto scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
-          >
-            <p class="p-4 md:text-3xl lg:text-5xl">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make. Lorem Ipsum is simply dummy text of
-              the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make.Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make.Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make.Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make.Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make.Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make.Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an the
-              printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-              unknown printer took a galley of type and scrambled it to make.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make.Lorem Ipsum has been the industry's standard
-              dummy text ever since the 1500s, when an unknown printer took a
-              galley of type and scrambled it to make.Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an
-            </p>
-          </div>
-        </div>
-      </div>
+    <div
+      class="text-customGray-100 relative z-30 font-expose tracking-widest p-8 text-xl"
+    >
+      <p class="p-4 text-center text-4xl">
+        Hey there! I'm a 23-year-old web development enthusiast with a passion
+        for building things for the web. I'm constantly learning and exploring
+        new technologies
+      </p>
+
+      <img
+        :class="navigation.isOpen ? 'hidden' : 'block'"
+        class="w-20 mx-auto"
+        src="~/assets/shapes/Star.svg"
+      />
+
+      <p class="p-4 text-center text-4xl">
+        Beyond code, I'm fascinated by the world of cinematography and the art
+        of storytelling through film. I also have a deep interest in Japanese
+        language and culture, and I'm always looking for ways to expand my
+        knowledge.
+      </p>
+
+      <img
+        :class="navigation.isOpen ? 'hidden' : 'block'"
+        class="w-20 mx-auto"
+        src="~/assets/shapes/Star.svg"
+      />
+
+      <p class="p-4 z-10 relative text-center text-4xl">
+        When I'm not coding, you might find me unwinding with a captivating book
+        or catching the thrill of a football match, cheering on my favorite
+        team.
+      </p>
+
+      <img
+        :class="navigation.isOpen ? 'hidden' : 'block'"
+        class="w-20 mx-auto"
+        src="~/assets/shapes/Star.svg"
+      />
+
+      <p class="p-4 pb-12 text-center text-4xl">
+        I'm currently looking for new opportunities.
+      </p>
     </div>
     <img
       :class="navigation.isOpen ? 'hidden' : 'block'"
