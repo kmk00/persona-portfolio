@@ -20,7 +20,7 @@ useSeoMeta({
 
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto"
+        class="w-20 mx-auto opacity-20"
         src="~/assets/shapes/Star.svg"
       />
 
@@ -33,7 +33,7 @@ useSeoMeta({
 
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto"
+        class="w-20 mx-auto opacity-20"
         src="~/assets/shapes/Star.svg"
       />
 
@@ -45,7 +45,7 @@ useSeoMeta({
 
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto"
+        class="w-20 mx-auto opacity-20"
         src="~/assets/shapes/Star.svg"
       />
 

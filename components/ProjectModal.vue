@@ -59,8 +59,16 @@ const {
       <div
         class="flex gap-4 xl:gap-8 font-expose my-2 md:my-4 2xl:my-6 text-customGray-300 text-2xl md:text-3xl 2xl:text-5xl"
       >
-        <a class="hover:animate-pulse" :href="projectLink">PROJECT</a>
-        <a v-if="demoLink" class="hover:animate-pulse" :href="demoLink">DEMO</a>
+        <a class="hover:animate-pulse" :href="projectLink" target="_blank"
+          >PROJECT</a
+        >
+        <a
+          v-if="demoLink"
+          class="hover:animate-pulse"
+          target="_blank"
+          :href="demoLink"
+          >DEMO</a
+        >
       </div>
       <div v-if="image" class="mb-2 border-8 border-customGray-300">
         <img :src="`/img/${image}`" />

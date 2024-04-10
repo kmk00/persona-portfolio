@@ -11,6 +11,7 @@ const { link, label } = defineProps({
     <a
       class="absolute right-[50%] z-10 translate-x-[50%] hover:scale-110 duration-200 ease-in-out"
       :href="link"
+      target="_blank"
       >{{ label }}</a
     >
   </div>
