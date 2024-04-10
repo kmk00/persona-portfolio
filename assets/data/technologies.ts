@@ -71,8 +71,8 @@ export const wantToLearn = [
     iconName: "mdi:sass",
   },
   {
-    name: "NODEJS",
-    iconName: "mdi:nodejs",
+    name: "AWS",
+    iconName: "mdi:aws",
   },
   {
     name: "VITEST",
