@@ -27,7 +27,7 @@ const toggle = () => {
         <p>{{ name }}</p>
       </div>
       <div
-        class="flex gap-3 justify-center bg-black text-white overflow-x-auto whitespace-nowrap px-4 py-2"
+        class="flex gap-3 justify-center bg-black text-white overflow-x-auto whitespace-nowrap px-4 py-2 scrollbar scrollbar-thumb-customYellow scrollbar-track-customGray-300 scrollbar-thin"
       >
         <p v-for="(tech, index) in technologies">
           {{ tech }}
