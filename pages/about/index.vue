@@ -17,38 +17,32 @@ useSeoMeta({
         for building things for the web. I'm constantly learning and exploring
         new technologies
       </p>
-
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto opacity-20"
+        class="w-20 mx-auto spin opacity-20"
         src="~/assets/shapes/Star.svg"
       />
-
       <p class="p-4 text-center text-4xl">
         Beyond code, I'm fascinated by the world of cinematography and the art
         of storytelling through film. I also have a deep interest in Japanese
         language and culture, and I'm always looking for ways to expand my
         knowledge.
       </p>
-
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto opacity-20"
+        class="w-20 mx-auto spin-reverse opacity-20"
         src="~/assets/shapes/Star.svg"
       />
-
       <p class="p-4 z-10 relative text-center text-4xl">
         When I'm not coding, you might find me unwinding with a captivating book
         or catching the thrill of a football match, cheering on my favorite
         team.
       </p>
-
       <img
         :class="navigation.isOpen ? 'hidden' : 'block'"
-        class="w-20 mx-auto opacity-20"
+        class="w-20 mx-auto spin opacity-20"
         src="~/assets/shapes/Star.svg"
       />
-
       <p class="p-4 pb-12 text-center text-4xl">
         I'm currently looking for new opportunities.
       </p>
@@ -65,3 +59,31 @@ useSeoMeta({
     />
   </div>
 </template>
+
+<style scoped>
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+.spin-reverse {
+  animation: spin-reverse 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+</style>

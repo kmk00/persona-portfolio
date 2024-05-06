@@ -19,7 +19,9 @@ const technologyStore = useTechnologies();
         class="grid pt-8 h-[300px] overflow-y-scroll overflow-x-hidden text-white grid-cols-2 sm:grid-cols-3 justify-center items-center text-center scrollbar scrollbar-thumb-customYellow scrollbar-track-white scrollbar-thin"
       >
         <StackItem
-          v-for="tech in technologies"
+          v-for="(tech, index) in technologies"
+          :technologies-number="technologies.length"
+          :index="index"
           :key="tech.name"
           :stack-name="tech.name"
           :icon-name="tech.iconName"
@@ -41,7 +43,9 @@ const technologyStore = useTechnologies();
           class="grid w-full h-[300px] sm:gap-4 sm:mr-4 mx-auto text-white grid-cols-2 justify-center items-center text-center"
         >
           <StackItem
-            v-for="tech in wantToLearn"
+            v-for="(tech, index) in wantToLearn"
+            :technologies-number="wantToLearn.length"
+            :index="index"
             :key="tech.name"
             :stack-name="tech.name"
             :icon-name="tech.iconName"
