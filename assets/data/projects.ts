@@ -49,6 +49,14 @@ export const projects = [
     image: "alphabet.webp",
   },
   {
+    name: "QRATES LANDING PAGE",
+    technologies: ["REACT", "TYPESCRIPT", "STYLED COMPONENTS"],
+    description: "Landing Page for Qrates.",
+    projectLink: "https://github.com/kmk00/Qrates-landing-page/tree/main",
+    demoLink: "https://kmk00-qrates-clone.netlify.app/",
+    image: "qrates.webp",
+  },
+  {
     name: "Quotes Extension",
     technologies: ["REACT", "TANSTACK QUERY", "TAILWINDCSS", "VITE"],
     description:
